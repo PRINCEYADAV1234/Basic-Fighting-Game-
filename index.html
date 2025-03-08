@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Fighting Game</h1>
+
+        <div class="Progress-bars">
+            <div class="Progress">
+                <h3>You</h3>
+                <div class="Progress-bar" id="player-health"></div>
+            </div>
+            <div class="Progess">
+                <h3>Opponent</h3>
+                <div class="Progress-bar" id="opponent-health"></div>
+            </div>
+        </div>
+
+        <div class="fight-area">
+            <div class="player character">
+                <img id="player-img" src="https://www.giantbomb.com/a/uploads/scale_small/8/82962/1908434-bryan_fury___full_body_cg_art_image___tekken_6.png" alt="Player">
+            </div>
+            <div class="vs">VS</div>
+            <div class="opponent character">
+                <img id="opponent-img" src="https://www.giantbomb.com/a/uploads/scale_small/36/361609/3331314-f10e4e2a-00a0-4e76-8fb0-f29b37c56957.png" alt="Opponent">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="playerAttack('Kick')">Kick</button>
+            <button onclick="playerAttack('Slap')">Slap</button>
+            <button onclick="playerAttack('Punch')">Punch</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
